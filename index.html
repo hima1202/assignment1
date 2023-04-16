@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vertical Drop-Down Navigation using HTML & CSS</title>
+<script src="https://kit.fontawesome.com/fbd8ab69ad.js" crossorigin="anonymous"></script>
+<style type="text/css">
+* {
+  padding:0; margin:0;
+}
+body{
+  background-color: #000000;
+}
+a {
+  text-decoration: none;
+}
+li {
+list-style: none;
+}
+
+.main-nav {
+  width: 250px; 
+  background: rgba(180,205,203,1.00);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+}
+.main-nav a {
+	
+	letter-spacing: .2em;
+	color: #000000;
+	display: block;
+	padding: 10px 0 10px 20px;
+	border-bottom: 1px dotted black;
+}
+.main-nav a:hover {
+  background:  rgba(180,205,203,1.00);
+  
+}
+.main-nav-ul ul {
+  display: none;
+  color: white;
+}
+.main-nav-ul li:hover ul {
+  display: block;
+  background-color: pink
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="main-nav">
+	<ul class="main-nav-ul">
+   	<li><a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+      
+    <ul>
+      <li><a href="#">Posts</a></li>
+            <li><a href="#">Picture</a></li>
+    </ul>
+    </li>
+      
+      <li><a href="#"><i class="fa-sharp fa-solid fa-message"></i>  Messages</a>
+      	<ul>
+         	<li><a href="#">new</a></li>
+            <li><a href="#">sent</a></li>
+            <li><a href="#">spam</a></li>
+         
+         </ul>
+      </li>
+      <li><a href="#"><i class="fa-solid fa-gears"></i> Settings</a>
+   
+        <ul>
+          <li><a href="#">Password</a></li>
+                <li><a href="#">Language</a></li>
+        </ul>
+        </li>
+      <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+   </ul>
+</nav>
+
+</body>
+</html>
